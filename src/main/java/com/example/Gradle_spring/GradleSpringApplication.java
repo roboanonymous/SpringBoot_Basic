@@ -11,10 +11,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class })
 public class GradleSpringApplication {
 	@RequestMapping("home")
-	public String home()
+	public void home()
 	{
 		System.out.println("Hi");
-		return "Home.jsp";
 	}
 	public static void main(String[] args) {
 		SpringApplication.run(GradleSpringApplication.class, args);
